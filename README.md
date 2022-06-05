@@ -1,13 +1,13 @@
 # PyPhish
 ## The Python Phishing Framework to test resilience against Phishing Campaigns
 
-#### This framework allows to simulate phishing campaigns, in order to test the resilience and the cyber awareness of the targets. It is possible to choose distinct phishing templates, that will be used as pretext to induce users to click on the embedded link. 
-#### A second component is the Command and Control server, which is an HTTP server where the users will land if they click on the link embedded in the mail. The tester will be able to see who clicked on the link, since a custom URL is provided to each target. A use case is an organization targeting its employees: this way, it will be able to know exactly who clicked on the link. Then, more sophisticated C2 server could be provided, that could, for instance, display fake login pages to steal users credentials or provide drive-by downloads to test a scenario where a user downloads malware trough a malicious URL, therefore assessing the effectiveness of the security softwares installed on the target hosts.
+This framework allows to simulate phishing campaigns, in order to test the resilience and the cyber awareness of the targets. It is possible to choose distinct phishing templates, that will be used as pretext to induce users to click on the embedded link. 
+
+A second component is the Command and Control server, which is an HTTP server where the users will land if they click on the link embedded in the mail. The tester will be able to see who clicked on the link, since a custom URL is provided to each target. A use case is an organization targeting its employees: this way, it will be able to know exactly who clicked on the link. Then, more sophisticated C2 server could be provided, that could, for instance, display fake login pages to steal users credentials or provide drive-by downloads to test a scenario where a user downloads malware trough a malicious URL, therefore assessing the effectiveness of the security softwares installed on the target hosts.
 
 ## Usage
 
-`usage: pyphish.py [-h] [-P PASSWORD] [-t TEMPLATE] [-v] SENDER_EMAIL SMTP_SERVER TARGETS`
-
+`usage: pyphish.py [-h] [-P PASSWORD] [-t TEMPLATE] [-v] SENDER_EMAIL SMTP_SERVER TARGETS
 positional arguments:
   SENDER_EMAIL          The sender email address (e.g.: user@example.com)
   SMTP_SERVER           The SMTP fully qualified name together with the port, in the following format:<FQDN:PORT> (ex: smtp.example.com:587). If a port is not
@@ -17,7 +17,6 @@ positional arguments:
                         'Template'. The email is necessary, while the 'Name' and 'Template' fields are optional. In case a name is associated with an email, it
                         will allow to build more user-tailored phishing emails. 'Template' allow to specify specific phishing emails for each target. Allowed
                         values are the following: <google|linkedin>.
-
 options:
   -h, --help            show this help message and exit
   -P PASSWORD, --password PASSWORD
@@ -28,4 +27,4 @@ options:
                         template is chosen.
   -v, --verbose         Displays verbose message, such as the list of targets together with the chosen templates.
 
-PyPhish: the Python Phishing Framework Author: Francesco Balzano License: MIT
+PyPhish: the Python Phishing Framework Author: Francesco Balzano License: MIT`
