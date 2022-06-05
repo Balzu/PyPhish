@@ -1,5 +1,5 @@
 # PyPhish
-## The Python Phishing Framework to test resilience against Phishing Campaigns
+## The Python Phishing Framework to simulate Phishing Campaigns
 
 This framework allows to simulate phishing campaigns, in order to test the resilience and the cyber awareness of the targets. It is possible to choose distinct phishing templates, that will be used as pretext to induce users to click on the embedded link. 
 
@@ -7,7 +7,8 @@ A second component is the Command and Control server, which is an HTTP server wh
 
 ## Usage
 
-`usage: pyphish.py [-h] [-P PASSWORD] [-t TEMPLATE] [-v] SENDER_EMAIL SMTP_SERVER TARGETS
+```
+usage: pyphish.py [-h] [-P PASSWORD] [-t TEMPLATE] [-v] SENDER_EMAIL SMTP_SERVER TARGETS
 positional arguments:
   SENDER_EMAIL          The sender email address (e.g.: user@example.com)
   SMTP_SERVER           The SMTP fully qualified name together with the port, in the following format:<FQDN:PORT> (ex: smtp.example.com:587). If a port is not
@@ -27,4 +28,5 @@ options:
                         template is chosen.
   -v, --verbose         Displays verbose message, such as the list of targets together with the chosen templates.
 
-PyPhish: the Python Phishing Framework Author: Francesco Balzano License: MIT`
+PyPhish: the Python Phishing Framework Author: Francesco Balzano License: MIT
+```
