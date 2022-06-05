@@ -31,6 +31,3 @@ options:
 PyPhish: the Python Phishing Framework Author: Francesco Balzano License: MIT
 ```
 
-## Demo
-
-<img src="https://media.giphy.com/media/UVRMIO9Jf66609Ghb3/giphy.gif" alt="Pyphish demo" style="width:100%;"/>
